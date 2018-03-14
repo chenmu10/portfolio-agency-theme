@@ -12,12 +12,13 @@ function initPage(params) {
 function createProjs() {
     var projs = [];
     // createProj(name, title, desc, url, timestamp, labels)
-    projs.push(createProj('Sokoban', 'Push boxes to targets', 'Sokoban is a type of transport puzzle, in which the player pushes boxes or crates around in a warehouse, trying to get them to storage locations.', 'img/portfolio/Sokoban.PNG', 1517443200, ["Matrixes", "keyboard events"]));
+    projs.push(createProj('Sokoban', 'Push boxes to targets', 'Sokoban is a type of transport puzzle, in which the player pushes boxes or crates around in a warehouse, trying to get them to storage locations.', 'img/portfolio/Sokoban.PNG', 1517443200, ["Matrixes", "keyboard events"],'sokoban'));
 
-    projs.push(createProj('mineweeper', 'Find all mines', 'Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.', 'img/portfolio/minesweeper.PNG', 1517443200, ["Matrixes", "keyboard events"]));
+    projs.push(createProj('Minesweeper', 'Find all mines', 'Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.', 'img/portfolio/minesweeper.PNG', 1517443200, ["Matrixes", "keyboard events"],'minesweeper'));
 
-    projs.push(createProj('What\'s in the Picture', 'Pick the right answer', '', 'img/portfolio/in-picture.PNG', 1517443200, ["Popup", "Timer"]));
-    projs.push(createProj('Touch-Numbers', 'Click numbers in order', 'A simple game for counting up numbers', 'img/portfolio/touch-nums.PNG', 1517443200, ["Popup", "Timer"]));
+    projs.push(createProj('What\'s in the Picture', 'Pick the right answer', '', 'img/portfolio/in-picture.PNG', 1517443200, ["Popup", "Timer"],'in-picture'));
+
+    projs.push(createProj('Touch Numbers', 'Click numbers in order', 'A simple game for counting up numbers', 'img/portfolio/touch-nums.PNG', 1517443200, ["Popup", "Timer"], 'touch-nums'));
 
 
     return projs;
@@ -25,7 +26,7 @@ function createProjs() {
 
 
 
-function createProj(name, title, desc, url, timestamp, labels) {
+function createProj(name, title, desc, url, timestamp, labels, dirName) {
     return {
         "id": gNextId++,
         "name": name,
@@ -33,7 +34,8 @@ function createProj(name, title, desc, url, timestamp, labels) {
         "desc": desc,
         "url": url,
         "publishedAt": timestamp,
-        "labels": labels
+        "labels": labels,
+		"dir": dirName
     }
 }
 
@@ -55,7 +57,7 @@ function renderProjItems() {
         <div class="portfolio-caption">
           <h4>${proj.name}</h4>
           <p class="text-muted">${proj.title}</p>
-          <a href="projs/${proj.name}/${proj.name}.html" class="btn btn-primary">Play</a>
+          <a href="projs/${proj.dir}/${proj.dir}.html" class="btn btn-primary">Play</a>
         </div>
       </div>
         `;
@@ -88,7 +90,7 @@ function renderProjModals() {
             <div class="modal-body">
               <!-- Project Details Go Here -->
               <h2>${proj.name}</h2>
-              <a href="projs/${proj.name}/${proj.name}.html" class="btn btn-primary">Play</a>
+              <a href="projs/${proj.dir}/${proj.dir}.html" class="btn btn-primary">Play</a>
                 <p class="item-intro text-muted">${proj.title}</p>
                 <p>${proj.desc}</p>
                 <ul class="list-inline">
