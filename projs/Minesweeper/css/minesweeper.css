@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #cccbcb;
+}
+
+header {
+    font-size: 3rem;
+    background-color: #f0a0a0;
+    padding: 10px;
+    
+}
+
+.radio-menu {
+    font-size: 1.2rem;
+}
+nav ol li{
+   list-style-type: none;
+   display: inline;
+}
+
+table {
+    margin: 0 auto;
+    border-style: solid;
+    /* border-collapse: collapse; */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.hidden {
+    background-color: #AAAAAA;
+}
+
+td {
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.bold-text {
+   font-weight: bold;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+}
+
+.clicked {
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    background-color: rgb(255, 85, 85);
+}
+
+.timer {
+    font-size: 1.3em;
+}
+
+.resetBtn {
+    background: #e70000;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.resetBtn:hover {
+    background: #fd6601;
+    text-decoration: none;
+}
+
+.end {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+}
+
+.lost {
+    background-color: rgb(255, 85, 85);
+}
+
+input {
+    margin-left: 30px;
+}

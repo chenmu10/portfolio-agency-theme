@@ -1,0 +1,121 @@
+/* 
+TODO:
+ modal hide
+ pic ease in 
+*/
+
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../../fonts/Roboto-Regular.ttf)
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+
+img {
+    max-width: 100%;
+  
+}
+
+.questImg {
+    animation-name: popup;
+    animation-duration: 2s;
+}
+
+@keyframes popup {
+    from {transform: translate(0,-500px);}
+    to {transform: translate(0,0);}
+}
+
+body {
+    margin: 0;
+    background-color: rgb(228, 231, 238);
+	font-size: 1.4em;
+}
+
+
+
+header  {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 25px;
+    padding: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    background-color: rgb(241, 214, 214);
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.options-list li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.options-list li button {
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    padding: 10px;
+    color: white;
+	font-size: 1.1em;
+}
+
+.wrong-color {
+    border: 2px solid red;
+}
+
+.hidden {
+    display: none;
+}
+
+.questImg {
+    width: 400px;
+    height: 400px;
+	border: 1px solid black;
+}
+
+.resetBtn {
+	background-color: yellow;
+	margin: 10px;
+	font-size: 1.5em;
+	padding:10px;
+}
+
+.score {
+	color: red;
+}
+
+
+/*=============================================
+=            Helpers            =
+=============================================*/
+
+.full-height {
+    height: 100%;
+}
+
+.options-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+/*=====  End of Helpers  ======*/

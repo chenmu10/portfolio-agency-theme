@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>💣 Minesweeper - Chen</title>
+    <link rel="stylesheet" href="css/minesweeper.css">
+</head>
+<!--   -->
+<body onload="initGame()" oncontextmenu="return false;">
+<header>Minesweeper JS</header>
+
+<main>
+    <div class="container">
+      
+        <p class="radio-menu">
+            <input type="radio" name="level" id="level1" checked="checked" onchange="initGame(this);">
+            <label for="level1"><span class="bold-text">Beginner</span>  (4*4 with ~2 MINES)</label>
+            <input type="radio" name="level" id="level2" onchange="initGame(this);">
+            <label for="level2"><span class="bold-text">Medium</span> (6 * 6 with ~5 MINES)</label>
+            <input type="radio" name="level" id="level3"  onchange="initGame(this);">
+            <label for="level3"><span class="bold-text">Expert</span> (8 * 8 with ~15 MINES)</label>
+        </p>
+        <button class="resetBtn" onclick="initGame()">Reset</button>
+        <p>⏳ Your Time:
+           <span class="minutes">00</span>:<span class="seconds">00</span>
+        </p>
+        <p class="end"></p>
+            <table border="1">
+                    <tbody class="board"></tbody>
+                </table>
+    </div>
+</main>
+
+       
+   
+
+    <script src="js/utils.js"></script>
+    <script src="js/minesweeper.js"></script>
+</body>
+</html>

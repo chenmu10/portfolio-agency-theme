@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sokoban Game - Chen</title>
+    <link rel="stylesheet" href="css/sokoban.css">
+</head>
+
+<body onload="initGame()">
+    <h1>Sokoban Game</h1>
+   
+   
+    <ol>
+        <li> <button class="resetBtn" onclick="initGame()">Reset</button></li>
+        <li><span class="msg"></span></li>
+        <li>Steps: <span class="steps">0</span></li>
+        <li>Completed: <span class="completed">0</span></li>
+    </ol>
+   
+    <table>
+        <tbody class="board"></tbody>
+    
+    </table>
+   
+</body>
+
+
+<script src="js/sokoban.js"></script>
+
+</html>

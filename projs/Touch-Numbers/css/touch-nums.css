@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.clicked {
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    background-color: rgb(255, 85, 85);
+}
+
+table {
+    font-size: 2em;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 15px;
+    margin: auto;
+    width: 40%;
+}
+
+th,td {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.box {
+    margin: 20px auto ;
+    width: 50%;
+    border: 3px solid rgb(255, 85, 85);
+    padding: 10px;
+    text-align: center;
+}
+
+.radio-menu label{
+    padding-right: 5px;
+}
+
+.timer {
+    font-size: 1.3em;
+}
+
+.resetBtn {
+    background: #e70000;
+   
+    
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .resetBtn:hover {
+    background: #fd6601;
+   
+    text-decoration: none;
+  }
+
+.done {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Touch Number Game</title>
+    <link rel="stylesheet" href="css/touch-nums.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <h1>Touch Numbers Game</h1>
+        <p class="radio-menu">
+            <input type="radio" name="difficulty" id="easy" value="4" checked="checked" onchange="resetBoard(this);">
+            <label for="easy">Easy(16)</label>
+            <input type="radio" name="difficulty" id="hard"  value="5" onchange="resetBoard(this);">
+            <label for="hard">Hard(25)</label>
+            <input type="radio" name="difficulty" id="extreme"  value="6" onchange="resetBoard(this);">
+            <label for="extreme">Extreme(36)</label>
+        </p>
+        <button class="resetBtn" onclick="resetBoard()">Reset</button>
+        <p>Your Time:
+            <span class="timer">0.00</span>
+        </p>
+        <p class="done">
+            </p>
+        <table border="1" cellpadding="10">
+            <tbody class="tbl-nums">
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/touch-nums.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5 - in picture game</title>
+    <link rel="stylesheet" href="css/in-picture.css">
+</head>
+
+<body onload="initGame()" class="full-height">
+    <header> In Picture Game </header>
+    <main class="container">
+        <div class="endScreen hidden">
+            <h1>Your Score:
+                <span></span>
+            </h1>
+            <button class="resetBtn" onclick="initGame()">Play Again?</button>
+        </div>
+        <div class="questScreen">
+
+            <p>Choose the correct description of the following picture:</p>
+            <p>
+                <span class="questCount"></span>/<span class="questAmount"></span>
+            </p>
+            <img class="questImg" src='https://placehold.it/400x400/not_found' alt='' />
+            <div class="modal hidden" onmouseout="toggleModal()">
+                Select the correct option
+            </div>
+            <ul class="options-list">
+
+            </ul>
+        </div>
+    </main>
+    <footer>Chen Mualem 2018</footer>
+    <script src="js/in-picture.js"></script>
+</body>
+
+</html>
